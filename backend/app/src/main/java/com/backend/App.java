@@ -1,11 +1,14 @@
 package com.backend;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+@RestController
+@SpringBootApplication
+public class App {
+    @RequestMapping("/")
+    String home() {
+        return "Hello World!";
     }
 }

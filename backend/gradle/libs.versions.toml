@@ -4,7 +4,9 @@
 [versions]
 guava = "33.2.1-jre"
 junit = "4.13.2"
+spring-boot = "3.4.0"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 junit = { module = "junit:junit", version.ref = "junit" }
+springboot = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
